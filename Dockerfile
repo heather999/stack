@@ -16,7 +16,7 @@ RUN echo "Environment: \n" && env | sort && \
     /bin/bash -c 'source $LSST_STACK_DIR/loadLSST.bash; \
                   pip freeze > $LSST_STACK_DIR/require.txt; \
                   sed -i 's/astropy==3.1.2/astropy==3.2.3/g' $LSST_STACK_DIR/require.txt; \
-                  pip install -c $LSST_STACK_DIR/require.txt astropy==3.2.3
+                  pip install -c $LSST_STACK_DIR/require.txt astropy==3.2.3; \
                   export EUPS_PKGROOT=https://eups.lsst.codes/stack/src; \
                   setup lsst_distrib; \
                   git clone https://github.com/lsst/obs_lsst; \
