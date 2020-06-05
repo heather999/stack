@@ -50,7 +50,7 @@ RUN echo "Environment: \n" && env | sort && \
                   curl -LO https://github.com/esheldon/ngmix/archive/$DESC_ngmix_VER_STR.tar.gz; \
                   tar xzf $DESC_ngmix_VER_STR.tar.gz; \
                   cd ngmix-$DESC_ngmix_VER; \ 
-                  python setup.py install --prefix=$1; \
+                  python setup.py install; \
                   cd ..; \
                   rm $DESC_ngmix_VER_STR.tar.gz; \
                   ln -s ngmix-$DESC_ngmix_VER ngmix; \
