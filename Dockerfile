@@ -10,7 +10,8 @@ WORKDIR $LSST_STACK_DIR
 
 ARG DESC_GCR_VER=0.8.8
 ARG DESC_GCRCatalogs_VER=v0.14.3
-ARG DESC_numba_VER=0.46.0  # version CC includes on CVMFS v19 installation
+# numba version CC includes with CVMFS v19 installation
+ARG DESC_numba_VER=0.46.0
 ARG DESC_ngmix_VER=1.3.4
 ARG DESC_ngmix_VER_STR=v$DESC_ngmix_VER
 ARG DESC_meas_extensions_ngmix_VER=0.9.5
